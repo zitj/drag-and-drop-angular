@@ -1,0 +1,53 @@
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  pointer-events: none;
+  cursor: grabbing;
+}
+/* high-performance display:none; helper */
+.gu-hide {
+  left: -9999px !important;
+}
+/* added to mirrorContainer (default = body) while dragging */
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+/* added to the source element while its mirror is dragged */
+.gu-transit {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+  cursor: grabbing;
+}
+ul {
+  list-style: none;
+}
+.dragulica {
+  background: #1976d2;
+  padding: 5em;
+  border-radius: 5px;
+  list-style: none;
+  margin-bottom: 2em;
+  cursor: grab;
+}
+
+.gu-mirror .draga:active ul {
+  cursor: grabbing;
+}
+.dragulica:active {
+  cursor: grabbing;
+}
+.draga {
+  background: rgba(255, 255, 255, 0.842);
+  margin-bottom: 10px;
+  width: 190px;
+  padding: 1em 2em;
+  text-align: center;
+}
